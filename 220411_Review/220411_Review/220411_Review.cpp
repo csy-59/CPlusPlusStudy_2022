@@ -7,13 +7,298 @@ using namespace std;
 
 int main()
 {
+    //실습: 숫자 범위 판별(if문)
+   /* << <과제1: 정수를 하나 입력 받아서, 입력 받은 숫자가 10보다 크면 "입력된 숫자가 10보다 큽니다." 출력,
+            10 이하 9초과 이면 "9보다 큽니다." 출력,
+            9 이하 6초과 이면 "6보다 큽니다." 출력,
+            그 이외에는 "6보다 작거나 같습니다." 출력. >>>*/
+
+    //cout << "\n##실습1: 숫자 범위 판별(if문)" << endl;
+    //
+    //int user_num;
+    //cout << "정수 하나를 입력해주세요: ";
+    //cin >> user_num;
+    //
+    //if (user_num > 10) 
+    //    cout << "입력된 숫자가 10보다 큽니다." << endl;
+    //else if (user_num > 9) 
+    //    cout << "9보다 큽니다." << endl;
+    //else if (user_num > 6) 
+    //    cout << "6보다 큽니다." << endl;
+    //else 
+    //    cout << "6보다 작거나 같습니다." << endl;
+    
+    ////입력
+    //int input_num;
+    //cin >> input_num;
+    //
+    ////처리&출력
+    //if(input_num > 10)
+    //    cout << "입력된 숫자가 10보다 큽니다." << endl;
+    //else if(10 >= input_num && input_num > 9)
+    //    cout << "9보다 큽니다." << endl;
+    //else if(input_num > 6)
+    //    cout << "6보다 큽니다." << endl;
+    //else 
+    //    cout << "6보다 작거나 같습니다." << endl;
+    //
+    ////비교 연산자 중복 사용
+    ///*
+    //* 10 >= input_num >9
+    //*   == (10 >= input_num) > 9
+    //*   == 1(참) > 9
+    //*   == 0(거짓)
+    //*/
+
+    /*//실습2: 고향에 따른 다른 인사말 출력
+    * <<<과제2: switch 실습.
+*   당신의 고향은 어디입니까?
+*   1. 서울 2. 양평 3. 광주 4. 대전 5. 제주도
+*   (입력)
+* 
+*   안녕하세요. 당신의 고향은 (서울)이군요.
+*   (제주) 안녕하수꽝. 혼저옵서예.
+*   default: 5개 중에 선택해 주세요.>>>
+    */
+
+    //cout << "\n##실습2: 고향에 따른 다른 인사말 출력(switch)" << endl;
+    //cout << "당신의 고향은 어디입니까?" << endl;
+    //cout << "1. 서울  2. 양평  3. 광주  4. 대전  5. 제주도" << endl;
+    //cout << "입력: ";
+    //int regine_number;
+    //cin >> regine_number;
+    //
+    //switch (regine_number)
+    //{
+    //case 1: 
+    //    cout << "\n안녕하세요. 당신의 고향은 서울이군요." << endl;
+    //    break;   
+    //case 2:      
+    //    cout << "\n안녕하세요. 당신의 고향은 양평이군요." << endl;
+    //    break;   
+    //case 3:      
+    //    cout << "\n아따 허벌라게 반갑구마잉. 광주 사람을 여기서 만나네." << endl;
+    //    break;   
+    //case 4:      
+    //    cout << "\n안녕하셔유~. 대전 좋지유." << endl;
+    //    break;   
+    //case 5:      
+    //    cout << "\n안녕하수꽝. 제주에서 왔맨" << endl;
+    //    break;   
+    //default:     
+    //    cout << "\n5개 중에 선택해주세요." << endl;
+    //    break;
+    //}
+    //
+    //cout << "당신의 고향은 어디입니까?" << endl;
+    //cout << "1. 서울 2. 양평 3. 광주 4. 대전 5. 제주도" << endl;
+    //
+    ////입력: 정수형 변수
+    //int hometown_number;
+    //cin >> hometown_number;
+    //
+    ////처리&출력
+    //switch (hometown_number)
+    //{
+    //case 1:
+    //    cout << "안녕하세요. 당신의 고향은 서울이군요." << endl;
+    //    break;
+    //case 2:
+    //    cout << "안녕하세요. 당신의 고향은 양평이군요." << endl;
+    //    break;
+    //case 3:
+    //    cout << "\n아따 허벌라게 반갑구마잉. 광주 사람을 여기서 만나네." << endl;
+    //    break;
+    //case 4:
+    //    cout << "\n안녕하셔유~. 대전 좋지유." << endl;
+    //    break;
+    //case 5:
+    //    cout << "\n안녕하수꽝. 제주에서 왔맨" << endl;
+    //    break;
+    //default:
+    //    cout << "\n5개 중에 선택해주세요." << endl;
+    //    break;
+    //}
+    //
+    ////실습2를 if문으로 변경
+    //if (hometown_number == 1) {
+    //    cout << "안녕하세요. 당신의 고향은 서울이군요." << endl;
+    //}
+    //else if (hometown_number == 2) {
+    //    cout << "안녕하세요. 당신의 고향은 양평이군요." << endl;
+    //}
+    //else if (hometown_number == 3) {
+    //    cout << "\n아따 허벌라게 반갑구마잉. 광주 사람을 여기서 만나네." << endl;
+    //}
+    //else if (hometown_number == 4) {
+    //    cout << "\n안녕하셔유~. 대전 좋지유." << endl;
+    //}
+    //else if (hometown_number == 5) {
+    //    cout << "\n안녕하수꽝. 제주에서 왔맨" << endl;
+    //}
+    //else {
+    //    cout << "\n5개 중에 선택해주세요." << endl;
+    //}
+
+    //예제: while문. Hello World를 5번 출력하는 프로그램
+    //cout << "\n##while문(Hello World 5번 출력)" << endl;
+    //cout << "Hello World" << endl;
+    //while (1) { //무한반복. 한정된 메모리를 다 사용할 경우 종료.
+    //int repeat_count = 0;
+    //
+    //cout << "\n> break가 있는 if문 추가" << endl;
+    //while(1){
+    //    cout << "Hello World" << endl;
+    //    repeat_count++;
+    //
+    //    if (repeat_count >= 5)
+    //        break;
+    //}
+    //
+    //cout << "\n> 조건식을 바꾸는 실행문 추가" << endl;
+    //repeat_count = 0;
+    //while (repeat_count < 5) {
+    //    cout << "Hello World" << endl;
+    //    repeat_count++;
+    //}
+    //
+    //cout << "\n> while 조건식에 증감 연산자 추가" << endl;
+    //repeat_count = 0;
+    //while (repeat_count++ < 5) {
+    //    cout << "Hello World" << endl;
+    //}
+    //
+    //cout << "\n##do-while문(Hello World 5번 출력)" << endl;
+    //repeat_count = 0;
+    //do {
+    //    cout << "Hello World" << endl;
+    //    repeat_count++;
+    //} while (repeat_count < 5);
+    //
+    //
+    //cout << "\n> 조건식이 거짓인 while문" << endl;
+    //while (0) {
+    //    cout << "Hello World" << endl;
+    //    repeat_count++;
+    //
+    //    if (repeat_count >= 5)
+    //        break;
+    //}
+    //
+    //cout << "\n> 조건식이 거짓인 do-while문" << endl;
+    //repeat_count = 0;
+    //do {
+    //    cout << "Hello World" << endl;
+    //    repeat_count++;
+    //} while (0);
+
+    //실습3: 맞출 때까지 반복되는 숫자 맞추기 프로그램
+    //cout << "\n##실습3: 맞출 때까지 반복되는 숫자 맞추기 프로그램" << endl;
+    //srand(time(NULL));
+    //int answer = rand() % 9 + 1;
+    //
+    //int user_num;
+    //do {
+    //    cout << "예상 값 입력: ";
+    //    cin >> user_num;
+    //    if (user_num != answer)
+    //        cout << "false" << endl;
+    //    else 
+    //        break;
+    //} while (1);
+    //
+    //cout << "true" << endl;
+    //
+    //int correct_number = rand() % 9 + 1;
+    //cout << "미리보는 정답: " << correct_number << endl;
+    //
+    //int input_quiz_number = -1; //초기식
+    //while (input_quiz_number != correct_number) { //조건식
+    //    //입력
+    //    cin >> input_quiz_number;
+    //
+    //    //출력: true or false;
+    //    (input_quiz_number == correct_number) ? cout << "true" << endl : cout << "false" << endl;
+    //
+    //    ////1) break; 조건을 추가
+    //    //if (input_quiz_number == correct_number) {
+    //    //    break;
+    //    //}
+    //}
+
+    //##for문
+    //cout << "\n##for문" << endl;
+    //for (int i = 0; i < 5; i+=2) {// 3번 나온다.(0, 2, 4)
+    //    cout << "Hello World" << endl;
+    //}
+    
+    ////for 실습1: 10부터 1까지 차례대로 출력되는 코드를 작성해보자. >>>
+    //cout << "##for문 실습1: 10부터 1까지 차례대로 출력되는 코드를 작성해보자." << endl;
+    //for (int i = 10; i > 0; i--)
+    //    cout << i << " ";
+    //
+    ////for 실습2: 100 미만의 3의 배수를 차례대로 출력되는 코드를 작성해보자. >>>
+    //cout << "\n\n##for문 실습2: 100 미만의 3의 배수를 차례대로 출력되는 코드를 작성해보자." << endl;
+    //for (int i = 1; i * 3 < 100; i++)
+    //    cout << i * 3 << " ";
+    //
+    //cout << endl;
+    //for (int i = 3; i < 100; i += 3)
+    //    cout << i << " ";
+    //
+    ////for 실습3: 1000 미만의 2의 승수를 차례대로 출력되는 코드를 작성해보자. >>>
+    //cout << "\n\n##for문 실습3: 1000 미만의 2의 승수를 차례대로 출력되는 코드를 작성해보자." << endl;
+    //for (int i = 1;i < 1000;i *= 2)
+    //    cout << i << " ";
+
+    //cout << endl;
+    /*<< <for 실습4: 구구단을 출력해보자. >> >
+    * 실습4_1.구구단 2단을 차례대로 출력해보자.
+    * 실습4_2.구구단 2단~9단을 차례대로 출력해보자.
+    * 실습4_3.구구단 2단~9단을 다음과 같은 형태로 출력해보자.
+    *       2단 3단 4단
+    *       5단 6단 7단
+    *       8단 9단
+    */
+    
+    //for 실습4_1: 구구단 2단을 차례대로 출력해보자.
+    cout << "##for문 실습4_1: 구구단 2단을 차례대로 출력해보자." << endl;
+    for (int i = 1;i < 10;i++)
+        cout << "2 * " << i << " = " << 2 * i << endl;
+
+    //for 실습4_2: 구구단 2단~9단을 차례대로 출력해보자.
+    cout << "\n##for문 실습4_2: 구구단 2단~9단을 차례대로 출력해보자." << endl;
+    for (int i = 2; i < 10;i++) {
+        for (int j = 1; j < 10;j++) {
+            cout << i <<" * " << j << " = " << i * j << endl;
+        }
+        cout << endl;
+    }
+
+    //for 실습4_3: 구구단 2단~9단을 다음과 같은 형태로 출력해보자.
+    cout << "\n##for문 실습4_3: 구구단 2단~9단을 다음과 같은 형태로 출력해보자." << endl;
+    for (int i = 2; i <= 8;i+=3) {
+        for (int j = 1; j < 10;j++) {
+            cout << i <<" * " << j << " = " << i * j <<"\t";
+            cout << i + 1 <<" * " << j << " = " << (i + 1) * j <<"\t";
+            if (i != 8)
+                cout << i + 2 << " * " << j << " = " << (i + 2) * j << endl;
+            else
+                cout << endl;
+        }
+        cout << endl;
+    }
+
+}
+
+void _220411_study() {
     int input_key;
     float testFloat = 5.3f;//7자리
-    float testFloat1 = 5.3; //초기화 중 double에서 float로 잘립니다. 기본적으로 double 형. double은 float보다 크다.
+    //float testFloat1 = 5.3; //초기화 중 double에서 float로 잘립니다. 기본적으로 double 형. double은 float보다 크다.
     char testCharacter = 'a';
     std::string testString = "Hello";
     std::cout << "Hello World!\n";
-   
+
     //std::cin >> input_key;
     std::cout << &input_key << endl;
 
@@ -25,7 +310,7 @@ int main()
     cout << "\n##논리 연산자" << endl;
     cout << "!1: " << !1 << endl; //0
     cout << "!10: " << !0 << endl; //1
-    cout << "!-300: " << !-300 << endl; //0 (0이 아니면 참이다)
+    cout << "!-300: " << !- 300 << endl; //0 (0이 아니면 참이다)
 
     //3항 연산자
     cout << "\n##3항 연산자" << endl;
@@ -36,34 +321,8 @@ int main()
     cout << "\n##난수" << endl;
     srand(time(NULL)); //unsigned int타입 _Seed 매개변수
     cout << rand() << endl;
-
-    //실습1: 3과 7사이의 랜덤한 숫자를 출력하는 프로그램
-    cout << "\n##실습1: 3과 7사이의 랜덤한 숫자를 출력하는 프로그램" << endl;
-    cout << (rand() % 5) + 3 << endl;
-
-    //실습2: 가장 작은 값과 큰 값을 입력 받아서, 그 사이의 임의의 값을 출력하는 프로그램을 작성하자.
-    cout << "\n##실습2: 사용자가 지정한 범위의 랜덤값 출력" << endl;
-    int minValue = 0;
-    int maxValue = 0;
-    cout << "가장 작은 값을 입력해주세요: ";
-    cin >> minValue;
-    cout << "가장 큰 값을 입력해주세요: ";
-    cin >> maxValue;
-
-    cout << (rand() % (maxValue - minValue + 1)) + minValue << endl;
-
-    //실습3: 프로그램을 실행하면 내부적으로 1 ~ 9 사이의 숫자가 정답으로 정해진다.
-    //  유저가 1 ~ 10 사이의 숫자를 입력하여 맞으면 true, 틀리면 false를 출력한다.
-    cout << "\n##실습3: 1 ~ 9 사이의 랜덤 숫자 맞추기" << endl;
-    int answer = (rand() % 9) + 1;
-    int userInput = 0;
-    cout << "예상하는 값을 입력해주세요(1~9): ";
-    cin >> userInput;
-    cout << boolalpha << (userInput == answer) << endl;
-    (userInput == answer) ? cout << "true" << endl : cout << "false" << endl;
 }
-
-void homeWork() {
+void _220411_team_work() {
     ///*과제: 스플렌더*/
     ////개임 진행 관련
     //int playerCount = 2;//2~4
@@ -172,6 +431,64 @@ void homeWork() {
     //int royalCardOnyxPrice;
     //int royalCardRubyPrice;
 }
+void _220411_home_work() {
+    //실습1: 3과 7사이의 랜덤한 숫자를 출력하는 프로그램
+    cout << "\n##실습1: 3과 7사이의 랜덤한 숫자를 출력하는 프로그램" << endl;
+    cout << (rand() % 5) + 3 << endl;
+
+    int rand_num;
+
+    srand(time(NULL));
+    //rand(); // 0 ~ 3277 % 5 >> 0~4의 값 나옴
+    rand_num = 3, 4, 5, 6, 7; // == 3 + 0, 3 + 1, 3 + 2, 3 + 3, 3 + 4; 3은 고정 값. 0~4의 값이 필요.
+    rand_num = 3 + rand() % 5;
+
+    cout << rand_num << endl;
+
+    //실습2: 가장 작은 값과 큰 값을 입력 받아서, 그 사이의 임의의 값을 출력하는 프로그램을 작성하자.
+    cout << "\n##실습2: 사용자가 지정한 범위의 랜덤값 출력" << endl;
+    int minValue = 0;
+    int maxValue = 0;
+    cout << "가장 작은 값을 입력해주세요: ";
+    cin >> minValue;
+    cout << "가장 큰 값을 입력해주세요: ";
+    cin >> maxValue;
+    cout << (rand() % (maxValue - minValue + 1)) + minValue << endl;
+
+    //실습2: 가장 작은 값과 큰 값을 입력 받아서, 그 사이의 임의의 값을 출력하는 프로그램을 작성하자.
+    int input_min_number;
+    int input_max_number;
+    cin >> input_min_number;
+    cin >> input_max_number;
+
+    rand_num = input_min_number + rand() % (input_max_number - input_min_number + 1);//최소값에 해당 범위의 숫자의 개수
+
+    cout << rand_num << endl;
+
+    //실습3: 프로그램을 실행하면 내부적으로 1 ~ 9 사이의 숫자가 정답으로 정해진다.
+    //  유저가 1 ~ 10 사이의 숫자를 입력하여 맞으면 true, 틀리면 false를 출력한다.
+    cout << "\n##실습3: 1 ~ 9 사이의 랜덤 숫자 맞추기" << endl;
+    int answer = (rand() % 9) + 1;
+    int userInput = 0;
+    cout << "예상하는 값을 입력해주세요(1~9): ";
+    cin >> userInput;
+    cout << boolalpha << (userInput == answer) << endl;
+    (userInput == answer) ? cout << "true" << endl : cout << "false" << endl;
+
+    int correct_number;
+    correct_number = (rand() % 9) + 1;
+    //cout << "미리보는 정답: " << correct_number << endl;//테스트용
+
+    int input_quiz_number;
+    cin >> input_quiz_number;
+
+    (input_quiz_number == correct_number) ? cout << "true" << endl : cout << "false" << endl;
+
+}
+
+void _220412_home_work() {
+
+}
 
 /*
 * <<<<<<<<<C++ 문법>>>>>>>>>>>>>
@@ -245,6 +562,64 @@ void homeWork() {
 *                       기본적으로 seed는 1로 세팅되어 있다.
 *                           >> 진정한 랜덤값: 실행할 때마다 seed 값이 변경되어야 한다.
 *   > srand(time(null)): 넣어지는 값에 따라 seed 값이 변경된다.
+* 
+* #####22.04.12#####
+* # 제어문(제어구조)
+*   # 조건문: 특정 조건에 따라서 실행문을 실행할지 안할지 제어(if, switch)
+*       > if문
+*           - if([조건식]) { [실행문] }
+*               * 조건식: 참/거짓의 두가지 결과가 나오도록.
+*               > 조건식이 참이면 실행문을 실행한다.
+*       > if-else문
+*           - if([조건식]) { [실행문1] } 
+                else { [실행문2] }
+                > 조건식이 참이면 실행문1을 실행, 거짓이면 실행문2를 실행. (실행문1을 실행하면 실행문2는 실행되지 않는다.)
+        > elseif문
+            - if([조건식1]) { [실행문1] }
+                else if([조건식2]) { [실행문2] }
+                else { [실행문3] }
+                > 조건식1이 참이면 실행문1을 실행. 거짓이면 조건식2를 비교, 참이면 실행문2 실행. 조건식2가 거짓이면 실행문3 실행.
+                    *모든 실행문은 실행 후 다음 elseif문들을 무시한다.
+                    * 다양한 실행문 중 특정 실행문을 특정 상황에서 실행하고 싶을 때 사용.
+        > switch문
+            - switch([정수형 변수]){
+                case [정수1]: 
+                    [실행문1];
+                    break;
+                case [정수2]: 
+                    [실행문2];
+                    break;
+                case [정수3]: 
+                    [실행문3];
+                    break;
+                default : 
+                    [실행문4];
+                    break;
+              }
+                > 조건은 무조건 정수형 변수가 들어와야한다.
+                > 정수형 변수가 정수1일 경우 실행문1 실행, 정수2일 경우 실행문2 실행...
+                > break;문이 없다면 뒤에 있는 case문의 내용도 모두 실행된다.
+                > 모든 case와 일치하지 않는다면, default의 실행문4 실행.
+*   # 반복문: 특정 조건에 따라서 실행문을 일정 횟수만큼 반복 실행하도록 제어(whlie, for)
+*       > while문
+*           - while( [조건식] ) { [실행문], [조건식을 바꾸는 실행문] if([조건식]) {break;}}
+*               > 조건식이 참이면, 실행문을 반복해서 실행한다.
+*               > 조건식이 계속 참이면, 무한으로 반복한다.
+*               > while문을 중단시키는 방법
+*                   1. 조건식을 바꾸는 실행문을 실행한다.
+*                   2. 실행문 속에 조건식을 판별하여 break할 수 있도록 한다.
+*                       > 만약 break만 있을 경우 한번만 돌고 끝난다.
+*       > do-while문
+*           - do { [실행문] } while( [조건식]);
+*               > [실행문]을 먼저 실행하고 조건을 따진다.
+*               > 무조건 1번 이상은 [실행문]이 실행된다.
+*       > for문
+*           - for( (1)[초기식]; (2)[조건식]; (3)[증감식] ) { (4)[실행문] }
+*               > while문 만큼이나 자주 쓰인다.
+*               > 순서: (1) -> (2) -> (4) -> (3) -> (2) -> (4) -> (3) ...
+*                       (조건식의 결과값이 0(거짓)일때까지 반복)
+*               > (4)에서는 i++, i = i + 1, i+=1, ++i 같은 것을 넣을 수 있다. 
+*               
 */
 
 /*
@@ -252,19 +627,49 @@ void homeWork() {
 */
 
 /*
+* 22.04.11
 * <<<과제2: 3~7 사이의 랜덤한 숫자를 출력하는 프로그램을 작성하자>>>
 * <<<과제3: 가장 작은 값과 큰 값을 입력 받아서, 그 사이의 임의의 값을 출력하는 프로그램을 작성하자.>>>
 * <<<과제4: 프로그램을 실행하면 내부적으로 1 ~ 9 사이의 숫자가 정답으로 정해진다. 
     유저가 1 ~ 10 사이의 숫자를 입력하여 맞으면 true, 틀리면 false를 출력한다.>>>
 */
 
-// 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
-// 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴
-
-// 시작을 위한 팁: 
-//   1. [솔루션 탐색기] 창을 사용하여 파일을 추가/관리합니다.
-//   2. [팀 탐색기] 창을 사용하여 소스 제어에 연결합니다.
-//   3. [출력] 창을 사용하여 빌드 출력 및 기타 메시지를 확인합니다.
-//   4. [오류 목록] 창을 사용하여 오류를 봅니다.
-//   5. [프로젝트] > [새 항목 추가]로 이동하여 새 코드 파일을 만들거나, [프로젝트] > [기존 항목 추가]로 이동하여 기존 코드 파일을 프로젝트에 추가합니다.
-//   6. 나중에 이 프로젝트를 다시 열려면 [파일] > [열기] > [프로젝트]로 이동하고 .sln 파일을 선택합니다.
+/*
+* 22.04.12
+* <<<과제1: 정수를 하나 입력 받아서, 입력 받은 숫자가 10보다 크면 "입력된 숫자가 10보다 큽니다." 출력,
+*       10 이하 9초과 이면 "9보다 큽니다." 출력,
+*       9 이하 6초과 이면 "6보다 큽니다." 출력,
+*       그 이외에는 "6보다 작거나 같습니다." 출력.>>>
+* 
+* <<<과제2: switch 실습.
+*   당신의 고향은 어디입니까?
+*   1. 서울 2. 양평 3. 광주 4. 대전 5. 제주도
+*   (입력)
+* 
+*   안녕하세요. 당신의 고향은 (서울)이군요.
+*   (제주) 안녕하수꽝. 혼저옵서예.
+*   default: 5개 중에 선택해 주세요.>>>
+* 
+* <<<과제3: while을 사용하여 정답을 맞출 때까지 반복되는 숫자 맞추기 프로그램만들기>>>
+* 
+* <<<for 실습1: 10부터 1까지 차례대로 출력되는 코드를 작성해보자.>>>
+* <<<for 실습2: 100 미만의 3의 배수를 차례대로 출력되는 코드를 작성해보자.>>>
+* <<<for 실습3: 1000 미만의 2의 승수를 차례대로 출력되는 코드를 작성해보자.>>>
+* <<<for 실습4: 구구단을 출력해보자.>>>
+*       실습4_1. 구구단 2단을 차례대로 출력해보자.
+*       실습4_2. 구구단 2단~9단을 차례대로 출력해보자.
+*       실습4_3. 구구단 2단~9단을 다음과 같은 형태로 출력해보자. 
+*               2단 3단 4단
+*               5단 6단 7단
+*               8단 9단
+* 
+* <<<별찍기 문제
+* 1)
+* *
+* **
+* ***
+* ****
+* *****
+* 
+* 2)
+*/

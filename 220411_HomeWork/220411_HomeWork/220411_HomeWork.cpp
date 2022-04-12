@@ -2,6 +2,8 @@
 using namespace std;
 
 int main() {
+    srand(time(NULL));
+
     //실습1: 3과 7사이의 랜덤한 숫자를 출력하는 프로그램
     cout << "\n##실습1: 3과 7사이의 랜덤한 숫자를 출력하는 프로그램" << endl;
     cout << (rand() % 5) + 3 << endl;
