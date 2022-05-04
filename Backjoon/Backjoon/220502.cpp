@@ -17,21 +17,20 @@ int main() {
 		int jooR = 0;
 		scanf("%d %d %d", &joo[0], &joo[1], &jooR);
 
-		if (lee[0] == joo[0] && lee[1] == joo[1]) {
+		float distance = sqrt((lee[0] - joo[0]) * (lee[0] - joo[0]) + (lee[1] - joo[1]) * (lee[1] - joo[1]));
+
+		if (distance == 0) {
 			if (leeR == jooR) {
 				printf("-1\n");
 			}
 			else {
 				printf("0\n");
 			}
-			continue;
 		}
-		
-		float distance = sqrt((lee[0] - joo[0]) * (lee[0] - joo[0]) + (lee[1] - joo[1]) * (lee[1] - joo[1]));
 		if (leeR + jooR > distance && distance > abs(leeR - jooR)) {
 			printf("2\n");
 		}
-		else if (leeR + jooR == distance) {
+		else if (leeR + jooR == distance || abs(leeR - jooR) == distance) {
 			printf("1\n");
 		}
 		else {
