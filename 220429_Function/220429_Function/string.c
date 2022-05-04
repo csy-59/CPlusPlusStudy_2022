@@ -93,7 +93,9 @@ int strcmp(const char* str1, const char* str2) {
 		str2++;
 	}
 
-	return 0;
+	//!오류! return 0을 쓰면, "hello" 와 "hello!"가 같다고 함
+	return *str1 - *str2;
+	//return 0;
 }
 
 char* strstr(const char* str, const char* substr) {
@@ -180,6 +182,8 @@ int main() {
 		strcpy(result, "smaller than");
 	}
 	printf("'%s' is %s '%s' \n", apple, result, bear);
+
+	printf("%d\n", strcmp("hello", "hello!"));
 
 	if (strcmp(bear, bear) == 0) {
 		strcpy(result, "same as");
